@@ -1,0 +1,173 @@
+@import url(https://fonts.bunny.net/css?family=dm-sans:400,500,700);
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 13px;
+	color: #111827;
+}
+.container{
+	width: 70vw;
+	margin: 0 auto;
+}
+header{
+	width: 100vw;
+	float: left;
+	padding: 35px 0;
+	position: fixed;
+	background: #ffffff;
+}
+header .logo{
+	float: left;
+}
+header .logo img{
+	height: 40px;
+}
+header nav{
+	float: right;
+}
+header nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+header nav ul li{
+	display: inline-block;
+	margin: 0 0 0 60px;
+	font-size: 15px;
+	color: #111827;
+}
+header nav ul li a{
+	color: #111827;
+	text-decoration: none;
+}
+header nav ul li a:hover{
+	transition: color 0.2s ease-in-out; 
+	color: #334155;
+	border-bottom: 2px solid #334155;
+	padding: 0 0 8px 0;
+	cursor: pointer;
+}
+header nav ul li.button{
+	background: #111827;
+	padding: 10px 35px;
+	color: #ffffff;
+	border-radius: 10px;
+	font-weight: 500;
+	cursor: pointer;
+}
+header nav ul li.button:hover{
+	transition: background 0.2s ease-in-out; 
+	background: #334155;
+	color: #ffffff;
+}
+#hero{
+	width: 100vw;
+	float: left;
+	margin: 20vh 0 -20% 0;
+	height: 70vh;
+}
+#hero .left{
+	width: 50vw;
+	height: 100%;
+	float: left;
+	background: url('../images/background.png') no-repeat;
+	background-size: cover;
+	background-position: right;
+	margin-bottom: -200px;
+	position: fixed;
+}
+#hero .small-contain{
+	width: 70%;
+}
+#hero .right{
+	float: right;
+	width: 50vw;
+	height: 100%;
+}
+#hero h1{
+	font-size: 48px;
+	letter-spacing: -1px;
+	margin: 30px 0 0 0;
+	line-height: 55px;
+}
+#hero p{
+	font-size: 17px;
+	letter-spacing: 0.2px;
+	color: #64748b;
+	font-weight: 400;
+	line-height: 30px;
+	margin: 20px 0;
+}
+.made-by{
+	display: block;
+	position: relative;
+	margin: 12vh 0 0 0;
+	float: right;
+	background: #f1f5f9;
+	padding: 10px 15px;
+	border-radius: 20px;
+	color: #94a3b8;
+	font-size: 13px;
+}
+.made-by:hover{
+	background: #334155;
+	color: #f1f5f9;
+	transition: 0.2s ease-in-out; 
+}
+
+@media (max-width: 420px) {
+	.container{
+		width: 340px;
+		margin: 0 auto;
+	}
+	header{
+		width: 100%;
+		padding: 20px 0;
+	}
+	header .logo img{
+		height: 30px;
+	}
+	header nav ul li{
+		display: inline-block;
+		margin: 0 0 0 30px;
+		font-size: 14px;
+	}
+	#hero{
+		width: 100%;
+		float: left;
+		margin: 100px 0 0 0;
+	}
+	#hero .left{
+		display: none;
+	}
+	#hero .small-contain{
+		width: 100%;
+	}
+	#hero .right{
+		float: none;
+		width: 90%;
+		height: 100%;
+		margin: 0 auto;
+	}
+	#hero h1{
+		font-size: 48px;
+		letter-spacing: -1px;
+		margin: 30px 0 0 0;
+		line-height: 55px;
+	}
+	#hero p{
+		font-size: 17px;
+		letter-spacing: 0.2px;
+		color: #64748b;
+		font-weight: 400;
+		line-height: 30px;
+		margin: 20px 0;
+	}
+	.made-by{
+		display: block;
+		position: relative;
+		margin: 20px 0 40px 0;
+		float: left;
+	}
+}
