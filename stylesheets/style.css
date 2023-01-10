@@ -76,6 +76,17 @@ header nav ul li.button:hover{
 	background-position: right;
 	margin-bottom: -200px;
 	position: fixed;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 0.3s;
+    animation: slide 0.5s forwards;
+    animation-delay: 0.3s;
+    left: -30vw;
+}
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+@keyframes slide {
+    100% { left: 0; }
 }
 #hero .small-contain{
 	width: 70%;
